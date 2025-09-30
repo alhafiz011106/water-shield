@@ -3,57 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Water Shield - Penapis Air</title>
+  <title>Water Shield</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f4f9;
       margin: 0;
       padding: 0;
-      text-align: center;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #0077b6;
-      color: white;
-      padding: 20px;
     }
     h1 {
-      margin: 0;
-      font-size: 26px;
+      margin-top: 20px;
+      color: #333;
     }
-    .container {
-      padding: 40px 20px;
-    }
-    .cta button {
-      padding: 15px 30px;
+    p {
+      color: #555;
       font-size: 18px;
-      background-color: green;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
     }
-    .cta button:hover {
-      background-color: #004d00;
+    .gallery {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .gallery img {
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 300px;
+    }
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #25D366;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s ease;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebe57;
+    }
+    .whatsapp-btn img {
+      width: 24px;
+      height: 24px;
     }
   </style>
 </head>
 <body>
+  <h1>Water Shield</h1>
+  <p>Produk perlindungan air terbaik untuk anda sekeluarga.</p>
 
-  <header>
-    <h1>Water Shield - Penapis Air Satu Rumah</h1>
-    <p>Punca badan gatal & muka berjerawat datang dari air yang tidak ditapis sempurna!</p>
-  </header>
-
-  <div class="container">
-    <div class="cta">
-      <p><b>Saya Berminat!</b></p>
-      <a href="https://wa.me/60189480244?text=Hai%2C%20saya%20berminat%20nak%20pasang%20Water%20Shield%20di%20rumah%20saya." target="_blank">
-        <button>WhatsApp Sekarang 📲</button>
-      </a>
-    </div>
+  <!-- Galeri 3 gambar -->
+  <div class="gallery">
+    <img src="preview1.png" alt="Gambar Pertama">
+    <img src="preview2.png" alt="Gambar Kedua">
+    <img src="preview3.png" alt="Gambar Ketiga">
   </div>
 
+  <!-- Butang WhatsApp -->
+  <a class="whatsapp-btn" href="https://wa.me/60189480244" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    Chat di WhatsApp
+  </a>
 </body>
 </html>
