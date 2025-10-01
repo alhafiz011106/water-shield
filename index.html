@@ -7,14 +7,24 @@
   <style>
     body { 
       font-family: Arial, sans-serif; 
-      text-align: center; 
       background: #f9f9f9; 
       margin: 0; 
       padding: 0; 
+      color: #333;
     }
-    h1 { color: #0066cc; margin-top: 20px; }
-    p { font-size: 18px; margin-bottom: 20px; }
-    img { width: 90%; max-width: 400px; margin: 10px auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
+    h1 { color: #0066cc; text-align: center; margin: 20px 0 10px; }
+    h2 { color: #444; margin: 30px 0 15px; text-align: center; }
+    p { font-size: 16px; text-align: center; margin: 10px 20px; }
+    .section { padding: 20px; }
+    .images, .testimoni, .lokasi { text-align: center; }
+    img { 
+      width: 90%; 
+      max-width: 400px; 
+      margin: 10px auto; 
+      border-radius: 10px; 
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: block;
+    }
     .btn {
       display: inline-block;
       padding: 12px 24px;
@@ -23,14 +33,32 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      margin: 20px 0;
+      margin: 20px auto;
     }
     .link {
       display: block;
       margin-top: 15px;
+      text-align: center;
       color: #0066cc;
       text-decoration: none;
       font-weight: bold;
+    }
+    .lokasi-list { 
+      text-align: left; 
+      max-width: 600px; 
+      margin: 0 auto; 
+      background: #fff; 
+      padding: 15px; 
+      border-radius: 10px; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .lokasi-list p { margin: 8px 0; font-size: 15px; }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #0066cc;
+      color: white;
+      margin-top: 30px;
     }
   </style>
 </head>
@@ -38,24 +66,43 @@
   <h1>Water Shield</h1>
   <p>Produk perlindungan air terbaik untuk anda sekeluarga.</p>
 
-  <!-- Gambar produk -->
-  <img src="preview1.png" alt="Water Shield Preview 1">
-  <img src="preview2.png" alt="Water Shield Preview 2">
-  <img src="preview3.png" alt="Water Shield Preview 3">
+  <!-- Gambar Produk -->
+  <div class="section images">
+    <img src="preview1.png" alt="Water Shield 1">
+    <img src="preview2.png" alt="Water Shield 2">
+    <img src="preview3.png" alt="Water Shield 3">
+  </div>
 
-  <!-- Butang WhatsApp dengan mesej automatik -->
-  <a href="https://wa.me/60189480244?text=Saya%20berminat%20dengan%20WaterShield" target="_blank" class="btn">
-    💬 WhatsApp Saya
-  </a>
+  <!-- Butang WhatsApp -->
+  <div style="text-align:center;">
+    <a href="https://wa.me/60189480244?text=Saya%20berminat%20dengan%20WaterShield" target="_blank" class="btn">
+      💬 WhatsApp Saya
+    </a>
+  </div>
 
-  <!-- Link ke website penuh -->
-  <a href="https://alhafiz011106.github.io/water-shield/" target="_blank" class="link">
-    🌐 Lihat Website Penuh
-  </a>
+  <!-- Testimoni -->
+  <div class="section testimoni">
+    <h2>Testimoni Pelanggan</h2>
+    <img src="preview4.png" alt="Testimoni Pelanggan">
+    <p><b>Pn. Aisyah</b> - "Air lebih bersih & yakin untuk keluarga selepas guna Water Shield!"</p>
+  </div>
+
+  <!-- Lokasi Cawangan -->
+  <div class="section lokasi">
+    <h2>Lokasi Cawangan</h2>
+    <div class="lokasi-list">
+      <p>📍 Wisma Nihoma 40, 42, 44, 46, Lorong Kelasah 3, Taman Kelasah, 13700 Seberang Jaya, Pulau Pinang (1300 88 3939)</p>
+      <p>📍 No 37A, Wisma KPKB, Taman Ganding, Jalan Langgar, 05460 Alor Setar, Kedah (04 7337 160)</p>
+      <p>📍 No 3, 1st Floor, Taman Pengkalan Setia, 34000 Taiping, Perak (05 849 3918)</p>
+      <p>📍 DT3620, Tingkat 1, Jalan Angkasa Nuri 1, Taman Angkasa Nuri, Durian Tunggal, 76100 Melaka (06 336 0918)</p>
+      <p>📍 PT8723, Tingkat Bawah & Tingkat Satu, Bandar Baru Pasir Mas, Lubok Jong, 17070 Pasir Mas, Kelantan (017 651 8918)</p>
+      <p>📍 140, Lorong Sejati 5, Taman Melor Sejati, 36000 Teluk Intan (05 623 0918)</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Hak Cipta © 2025 Water Shield. Semua Hak Terpelihara.
+  </footer>
 </body>
 </html>
-
-      
-      
-      
- 
