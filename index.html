@@ -49,14 +49,14 @@
   <div class="section testimoni">
     <h2>Pelanggan Nihoma Malaysia</h2>
     <div class="carousel-container">
-      <img src="images/testimoni/testimoni1.png" class="carousel-item">
-      <img src="images/testimoni/testimoni2.png" class="carousel-item">
-      <img src="images/testimoni/testimoni3.png" class="carousel-item">
-      <img src="images/testimoni/testimoni4.png" class="carousel-item">
-      <img src="images/testimoni/testimoni5.png" class="carousel-item">
-      <img src="images/testimoni/testimoni6.png" class="carousel-item">
-      <img src="images/testimoni/testimoni7.png" class="carousel-item">
-      <img src="images/testimoni/testimoni8.png" class="carousel-item">
+      <img src="testimoni1.png" class="carousel-item">
+      <img src="testimoni2.png" class="carousel-item">
+      <img src="testimoni3.png" class="carousel-item">
+      <img src="testimoni4.png" class="carousel-item">
+      <img src="testimoni5.png" class="carousel-item">
+      <img src="testimoni6.png" class="carousel-item">
+      <img src="testimoni7.png" class="carousel-item">
+      <img src="testimoni8.png" class="carousel-item">
     </div>
     <div style="text-align:center; margin-top:10px;">
       <a href="https://wa.me/60189480244?text=Saya%20nak%20dapatkan%20testimoni%20pelanggan" target="_blank" class="btn">
@@ -112,7 +112,7 @@
       items.forEach((img,i)=>img.style.display = i===index?'block':'none');
       index = (index+1) % items.length;
     }
-    setInterval(showNext, 3000); // tukar setiap 3 saat
+    setInterval(showNext, 3000);
     showNext();
 
     // Zoom Image Modal
@@ -126,4 +126,12 @@
       modalImg.src = this.src;
     }
     closeModal.onclick = function(){
-      modal.style.display
+      modal.style.display = "none";
+    }
+    window.onclick = function(event){
+      if(event.target == modal){ modal.style.display = "none"; }
+    }
+  </script>
+
+</body>
+</html>
