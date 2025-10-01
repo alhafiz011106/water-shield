@@ -5,86 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Water Shield</title>
   <style>
-    body { 
-      font-family: Arial, sans-serif; 
-      background: #f9f9f9; 
-      margin: 0; 
-      padding: 0; 
-      color: #333;
-    }
-    h1 { color: #0066cc; text-align: center; margin: 20px 0 10px; }
-    h2 { color: #444; margin: 30px 0 15px; text-align: center; }
-    p { font-size: 16px; text-align: center; margin: 10px 20px; }
-    .section { padding: 20px; }
-    .images, .testimoni, .lokasi { text-align: center; }
-    img { 
-      width: 90%; 
-      max-width: 400px; 
-      margin: 10px auto; 
-      border-radius: 10px; 
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      display: block;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      background: #25D366;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 20px auto;
-    }
-    .btn:hover {
-      background: #20b954;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-      transition: 0.3s;
-    }
-    .link {
-      display: block;
-      margin-top: 15px;
-      text-align: center;
-      color: #0066cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .lokasi-list { 
-      text-align: left; 
-      max-width: 600px; 
-      margin: 0 auto; 
-      background: #fff; 
-      padding: 15px; 
-      border-radius: 10px; 
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    .lokasi-list p { margin: 8px 0; font-size: 15px; }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #0066cc;
-      color: white;
-      margin-top: 30px;
-    }
-    /* Badge overlay untuk produk */
-    .badge {
-      position: absolute; 
-      top: 10px; 
-      right: 10px; 
-      background: red; 
-      color: white; 
-      padding: 5px 10px; 
-      border-radius: 8px; 
-      font-weight: bold;
-      font-size: 14px;
-    }
-    .product-container {
-      position: relative; 
-      display: inline-block; 
-      margin-bottom: 20px;
-    }
+    body { font-family: Arial, sans-serif; background: #f9f9f9; margin:0; padding:0; color:#333;}
+    h1 { color: #0066cc; text-align:center; margin:20px 0 10px;}
+    h2 { color:#444; text-align:center; margin:30px 0 15px;}
+    p { font-size:16px; text-align:center; margin:10px 20px;}
+    .section { padding:20px;}
+    .images, .testimoni, .lokasi { text-align:center;}
+    img { width:90%; max-width:400px; margin:10px auto; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); display:block;}
+    .btn { display:inline-block; padding:12px 24px; background:#25D366; color:white; border-radius:8px; text-decoration:none; font-weight:bold; margin:20px auto;}
+    .btn:hover { background:#20b954; box-shadow:0 6px 12px rgba(0,0,0,0.2); transition:0.3s;}
+    .lokasi-list { text-align:left; max-width:600px; margin:0 auto; background:#fff; padding:15px; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+    .lokasi-list p { margin:8px 0; font-size:15px;}
+    footer { text-align:center; padding:15px; background:#0066cc; color:white; margin-top:30px;}
+    .badge { position:absolute; top:10px; right:10px; background:red; color:white; padding:5px 10px; border-radius:8px; font-weight:bold; font-size:14px;}
+    .product-container { position:relative; display:inline-block; margin-bottom:20px;}
+    .carousel-container { position: relative; max-width:350px; margin:0 auto;}
+    .carousel-item { display:none; width:100%; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);}
   </style>
 </head>
 <body>
+
   <h1>Water Shield</h1>
   <p>Produk perlindungan air terbaik untuk anda sekeluarga.</p>
 
@@ -98,22 +38,28 @@
     <img src="preview3.png" alt="Water Shield 3">
   </div>
 
-  <!-- Butang WhatsApp Utama -->
+  <!-- Button WhatsApp Utama -->
   <div style="text-align:center;">
     <a href="https://wa.me/60189480244?text=Saya%20berminat%20dengan%20WaterShield" target="_blank" class="btn">
       💬 WhatsApp Saya
     </a>
   </div>
 
-  <!-- Testimoni Pelanggan Sebagai CTA -->
+  <!-- Testimoni Carousel -->
   <div class="section testimoni">
     <h2>Pelanggan Nihoma Malaysia</h2>
-    <div style="position: relative; display: inline-block; text-align:center;">
-      <img src="preview4.png" alt="Testimoni Pelanggan" style="max-width:300px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
-      <p style="margin-top:10px; font-weight:bold; font-size:16px;">
-        Pelanggan
-      </p>
-      <a href="#!" class="btn" onclick="alert('Testimoni Pelanggan akan dipaparkan di sini!')">
+    <div class="carousel-container">
+      <img src="images/testimoni/testimoni1.png" class="carousel-item">
+      <img src="images/testimoni/testimoni2.png" class="carousel-item">
+      <img src="images/testimoni/testimoni3.png" class="carousel-item">
+      <img src="images/testimoni/testimoni4.png" class="carousel-item">
+      <img src="images/testimoni/testimoni5.png" class="carousel-item">
+      <img src="images/testimoni/testimoni6.png" class="carousel-item">
+      <img src="images/testimoni/testimoni7.png" class="carousel-item">
+      <img src="images/testimoni/testimoni8.png" class="carousel-item">
+    </div>
+    <div style="text-align:center; margin-top:10px;">
+      <a href="https://wa.me/60189480244?text=Saya%20nak%20dapatkan%20testimoni%20pelanggan" target="_blank" class="btn">
         Tekan untuk Dapatkan Testimoni Pelanggan
       </a>
     </div>
@@ -128,43 +74,17 @@
     </div>
     <p style="font-weight:bold; font-size:16px;">Pelanggan</p>
     <div style="text-align:center;">
-      <a href="#!" class="btn" onclick="alert('Testimoni Pelanggan akan dipaparkan di sini!')">
+      <a href="https://wa.me/60189480244?text=Saya%20nak%20dapatkan%20testimoni%20pelanggan" target="_blank" class="btn">
         Tekan untuk Dapatkan Testimoni Pelanggan
       </a>
     </div>
   </div>
 
   <!-- Zoom Image Modal -->
-  <div id="imageModal" style="
-      display:none; 
-      position:fixed; 
-      z-index:999; 
-      padding-top:60px; 
-      left:0; top:0; width:100%; height:100%; 
-      overflow:auto; background-color: rgba(0,0,0,0.8);">
-    <span id="closeModal" style="
-        position:absolute; top:20px; right:35px; color:white; font-size:40px; cursor:pointer;">&times;</span>
+  <div id="imageModal" style="display:none; position:fixed; z-index:999; padding-top:60px; left:0; top:0; width:100%; height:100%; overflow:auto; background-color: rgba(0,0,0,0.8);">
+    <span id="closeModal" style="position:absolute; top:20px; right:35px; color:white; font-size:40px; cursor:pointer;">&times;</span>
     <img id="modalImg" style="margin:auto; display:block; max-width:90%; max-height:90%;">
   </div>
-
-  <script>
-    // Zoom / modal image
-    var modal = document.getElementById("imageModal");
-    var img = document.getElementById("zoomImage");
-    var modalImg = document.getElementById("modalImg");
-    var closeModal = document.getElementById("closeModal");
-
-    img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-    }
-    closeModal.onclick = function(){
-      modal.style.display = "none";
-    }
-    modal.onclick = function(e){
-      if(e.target == modal){ modal.style.display = "none"; }
-    }
-  </script>
 
   <!-- Lokasi Cawangan Mengikut Negeri -->
   <div class="section lokasi">
@@ -181,7 +101,29 @@
 
   <!-- Footer -->
   <footer>
-    Hak Cipta © nihoma malaysia. Semua Hak Terpelihara.
+    Hak Cipta © Nihoma Malaysia. Semua Hak Terpelihara.
   </footer>
-</body>
-</html>
+
+  <script>
+    // Carousel Testimoni
+    let index = 0;
+    const items = document.querySelectorAll('.carousel-item');
+    function showNext(){
+      items.forEach((img,i)=>img.style.display = i===index?'block':'none');
+      index = (index+1) % items.length;
+    }
+    setInterval(showNext, 3000); // tukar setiap 3 saat
+    showNext();
+
+    // Zoom Image Modal
+    var modal = document.getElementById("imageModal");
+    var img = document.getElementById("zoomImage");
+    var modalImg = document.getElementById("modalImg");
+    var closeModal = document.getElementById("closeModal");
+
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+    closeModal.onclick = function(){
+      modal.style.display
